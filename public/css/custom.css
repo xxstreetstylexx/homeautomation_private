@@ -1,0 +1,164 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : 21.01.2022, 20:44:32
+    Author     : Carsten
+*/
+
+[data-state="true"] {    
+    background-color: #157347;    
+}
+
+[data-state="false"] {
+    background-color: #b02a37;    
+}
+
+[data-state="any"] {
+    background-color: #fc3;    
+}
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+canvas#canvas {
+  display: block;
+  z-index: -1000;
+  position: absolute;
+  top: 0;
+  left: 0;
+  background: #360033;
+  background: -webkit-linear-gradient(to bottom, #0b8793, #360033);
+  background: linear-gradient(to bottom, #0b8793, #360033); 
+}
+
+body {
+    background-color: #000 !important;
+    overflow:hidden;   
+}
+
+.startrek .card {
+    background-color:#dfdfdf;
+}
+
+.startrek .card-header,
+.startrek .card-footer {
+    background-color:#d0b0a0;
+}
+
+/*
+#switchwrapper {
+    content: "";
+    display: block;
+    position: absolute;
+    top: 0;
+    width: 100vw;
+    height: 90vh;
+}
+*/
+
+.intercom h1 {
+    font-size: 1.75em;
+}
+
+.intercom h2 {
+    text-align: center;
+    font-size: 4em; 
+}
+
+.intercom td {
+    width: 50%;
+}
+
+.intercom input {
+	margin-bottom: 5px;
+}
+
+.intercom a:visited{ 
+	color: blue; 
+}
+
+.intercom .display {
+    width: 100%;
+    min-height: 400px;
+    padding-bottom: 20px;
+}
+
+.intercom .control {
+    width: 100%;
+    padding-bottom: 20px;
+}
+
+.intercom .control-button {
+    width: 100%;
+    min-height: 50px;
+}
+
+.intercom .display-box {
+    border: 2px solid black;
+}
+
+.intercom .title { 
+    vertical-align: top;
+}
+
+.intercom .standby {
+    background-color: red;
+}
+
+.intercom .go {
+    background-color: green;
+}
+
+.intercom .fade {
+    background-color: yellow;
+}
+
+.intercom .off {
+    background-color: gray;
+}
+
+.intercom .hidden {
+    visibility: hidden;
+}
+
+.intercom .no-display {
+    display: none;
+}
+
+.intercom .status {
+    height: 125px;
+    vertical-align: text-top;
+    font-weight: bold;
+    margin-bottom: 10px;
+    border-bottom: 2px solid black;
+    
+}
+
+.intercom .message {
+    height: 125px;
+    max-height: 125px;
+    margin-bottom: 10px;
+    border-bottom: 2px solid black;
+    overflow: auto;
+}
+
+.intercom .msg-time {
+    color: blue;
+}
+
+.intercom .cueMsg {
+    color: orange;
+}
+
+.intercom .selfMsg {
+    color: green;
+}
+
+.intercom .peerMsg {
+    color: red;
+}

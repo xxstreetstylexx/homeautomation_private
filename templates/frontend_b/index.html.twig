@@ -1,0 +1,42 @@
+{% extends 'base_b.html.twig' %}
+{% block body %}{% endblock %}
+{% block bodybak %}
+    <main>
+        <div id="switchwrapper" class="carousel carousel-dark slide" data-bs-ride="carousel"  data-bs-interval="false">
+            <div class="carousel-indicators">
+                <button type="button" data-bs-target="#switchwrapper" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Lichter"></button>
+                <button type="button" data-bs-target="#switchwrapper" data-bs-slide-to="1" aria-label="Gruppen"></button>
+                <button type="button" data-bs-target="#switchwrapper" data-bs-slide-to="2" aria-label="Wetter"></button>
+            </div>
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    
+                    <div class="container py-1">
+                        <div class="row row-cols-12 row-cols-sm-8 row-cols-md-12 g-3" id="groupholder"></div>
+                    </div>
+                    <div class="container py-1">
+                        <div class="row" id="weatherholder"></div>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <div class="container py-5">
+                        <div class="row row-cols-12 row-cols-sm-8 row-cols-md-12 g-3" id="lightholder"></div>
+                    </div>
+                </div>
+                <div class="carousel-item">
+
+                </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#switchwrapper" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#switchwrapper" data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+            </button>
+        </div>
+    </main>
+{% endblock %}
+
+

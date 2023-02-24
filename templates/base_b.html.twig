@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>Light-a-mation</title>
+        {# Run `composer require symfony/webpack-encore-bundle`
+           and uncomment the following Encore helpers to start using Symfony UX #}
+        {% block stylesheets %}
+            {#{{ encore_entry_link_tags('app') }}#}
+        {% endblock %}
+
+        {% block javascripts %}
+            {#{{ encore_entry_script_tags('app') }}#}
+        {% endblock %}
+
+        <link href="/lcars/css/lcars-nemesis-blue.min.css" rel="stylesheet">
+        <link href="/css/bootstrap.min.css" rel="stylesheet">        
+        <link href="/css/custom_b.css" rel="stylesheet">
+        <link href="/fa/css/all.css" rel="stylesheet"> 
+        <link href="//fonts.googleapis.com/css2?family=Antonio:wght@400;700&display=swap" rel="stylesheet">
+    </head>
+    <body>
+        <div class="wrap">
+            <div class="left-frame-top">
+                <div class="panel-1"><a href="" id="name">LCARS</a></div>
+                <div class="panel-2"><!--02<span class="hop">-262000</span>--></div>
+            </div>
+            <div class="right-frame-top">
+                <div class="banner">
+                    <span id="time" style="font-family: monospace;">Online</span>
+                </div>
+                <div class="data-cascade-button-group">
+                    <div class="cascade-wrapper">
+                        <!--<div class="data-cascade" id="default">
+                            <div class="row-1"><div class="dc1">101</div><div class="dc2">7109</div><div class="dc3">1966</div><div class="dc4">1222</div><div class="dc5">2020</div><div class="dc6">1444</div><div class="dc7">102</div><div class="dc8">1103</div><div class="dc9">1935</div><div class="dc10">1940</div><div class="dc11">708</div><div class="dc12">M113</div><div class="dc13">1956</div><div class="dc14">1209</div></div><div class="row-2"><div class="dc1">102</div><div class="dc2">8102</div><div class="dc3">1987</div><div class="dc4">044</div><div class="dc5">0051</div><div class="dc6">607</div><div class="dc7">1976</div><div class="dc8">1031</div><div class="dc9">1984</div><div class="dc10">1954</div><div class="dc11">1103</div><div class="dc12">415</div><div class="dc13">1045</div><div class="dc14">1864</div></div><div class="row-3"><div class="dc1">103</div><div class="dc2">714</div><div class="dc3">1993</div><div class="dc4">0222</div><div class="dc5">052</div><div class="dc6">1968</div><div class="dc7">2450</div><div class="dc8">746</div><div class="dc9">56</div><div class="dc10">47</div><div class="dc11">716</div><div class="dc12">8719</div><div class="dc13">417</div><div class="dc14">602</div></div><div class="row-4"><div class="dc1">104</div><div class="dc2">6104</div><div class="dc3">1995</div><div class="dc4">322</div><div class="dc5">90</div><div class="dc6">1931</div><div class="dc7">1701</div><div class="dc8">51</div><div class="dc9">29</div><div class="dc10">218</div><div class="dc11">908</div><div class="dc12">2114</div><div class="dc13">85</div><div class="dc14">3504</div></div><div class="row-5"><div class="dc1">105</div><div class="dc2">08</div><div class="dc3">2001</div><div class="dc4">713</div><div class="dc5">079</div><div class="dc6">1940</div><div class="dc7">LV</div><div class="dc8">426</div><div class="dc9">105</div><div class="dc10">10</div><div class="dc11">1206</div><div class="dc12">1979</div><div class="dc13">402</div><div class="dc14">795</div></div><div class="row-6"><div class="dc1">106</div><div class="dc2">31</div><div class="dc3">2017</div><div class="dc4">429</div><div class="dc5">65</div><div class="dc6">871</div><div class="dc7">1031</div><div class="dc8">541</div><div class="dc9">656</div><div class="dc10">764</div><div class="dc11">88</div><div class="dc12">001</div><div class="dc13">27</div><div class="dc14">05</div></div>
+                        </div>-->
+                    </div>                     
+                </div>
+                <div class="runner">
+                    <div class="top-corner-bg">
+                        <div class="top-corner"></div>
+                    </div>
+                    <div class="block-2"></div>
+                    <div class="block-4">
+                        <div class="block-4-floatbar-top"></div>
+                    </div>
+                </div>
+                <div class="bar-panel">
+                    <div class="bar-1"></div>
+                    <div class="bar-2"></div>
+                    <div class="bar-3"></div>
+                    <div class="bar-4"><div class="bar-4-inside"></div></div>
+                    <div class="bar-5"></div>		
+                </div>
+            </div>
+        </div>
+        <div class="wrap" id="gap">
+            <div class="left-frame">
+                <div>
+                    <div class="panel-3"><!--03<span class="hop">-1701D</span>--></div>       
+                    <div class="sidebar-buttons button-colcarousel-indicators" style="background-color:#000">
+                        <!--<a type="button" data-bs-target="#switchwrapper" data-bs-slide-to="4" aria-current="true" aria-label="Intercom">Intercom</a>-->
+                        <a type="button" data-bs-target="#switchwrapper" data-bs-slide-to="0" aria-label="Gruppen">Räume</a>
+                        <a type="button" data-bs-target="#switchwrapper" data-bs-slide-to="3" aria-label="Wetter">Radio</a>
+                        <a type="button" data-bs-target="#switchwrapper" data-bs-slide-to="6" aria-label="Power">Power</a>
+                        <a type="button" data-bs-target="#switchwrapper" data-bs-slide-to="2" aria-label="Wetter">Wetter</a>
+                        <a type="button" id="unweatherbutton" class="blink-slower cardinal" data-bs-target="#switchwrapper" data-bs-slide-to="5" aria-current="true" aria-label="Wetter">Unwetter</a>                        
+                    </div>
+                    <div class="panel-4"><!--04<span class="hop">-841015</span>--></div>                    
+                </div>
+            </div>
+            <div class="right-frame">
+                <div class="bar-panel">
+                    <div class="bar-6"></div>
+                    <div class="bar-7"></div>
+                    <div class="bar-8"></div>
+                    <div class="bar-9"><div class="bar-9-inside"></div></div>
+                    <div class="bar-10"></div>
+                </div>
+                <div class="runner">
+                    <div class="corner-bg">
+                        <div class="corner"></div>
+                    </div>
+                    <div class="block-2"></div> 
+                    <div class="block-4b">
+                        <div class="block-4-floatbar-bottom"></div>
+                        <div class="block-4-thinbar"></div>
+                    </div>
+                </div>
+                <div class="content startrek">
+                    <div id="switchwrapper" class="carousel carousel-dark" data-bs-ride="carousel" data-bs-interval="false">                        
+                        <div class="carousel-inner">
+                            <div class="carousel-item active">
+                                <div class="container py-1">
+                                    <div class="row row-cols-12 g-3" id="groupholder"></div>
+                                </div>
+                            </div>
+                            <div class="carousel-item">
+                                <div class="container py-2">
+                                    <div class="row row-cols-12 g-3" id="lightholder"></div>
+                                </div>
+                            </div>
+                            <div class="carousel-item">
+                                <div class="container py-1">
+                                    <div class="row row-cols-12 g-3" id="weatherholder"></div>
+                                </div>
+                            </div>
+                            <div class="carousel-item">
+                                <div class="container py-1">
+                                    <div class="row row-cols-12 g-3" id="irgendwas">
+                                        <iframe src="/radio" width="100%" height="300px"></iframe>
+                                    </div>
+
+                                </div>
+                            </div>
+                            <div class="carousel-item">
+                                <div class="container py-1 intercom">
+
+                                    <div class="row row-cols-12 g-3">
+                                        <div class="col col-md-3 buttons" id="intercomreciepts">
+                                            <a class="c56">button 01</a>
+                                            <a class="c56">button 02</a>
+                                            <a class="c56">button 03</a>
+                                            <a class="c56">button 04</a>
+                                        </div>
+                                        <div class="col col-md-9 buttons" id="intercommessages">
+
+                                        </div>
+                                    </div>
+                                    <div class="row row-cols-12 g-3">
+                                        <div class="col col-md-3 offset-9 buttons" id="intercomreciepts">
+                                            <a class="c57" data-intercom-send="1">senden</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="carousel-item">
+                                <div class="container py-1">
+                                    <div class="row row-cols-12 g-3" id="unweatherholder"></div>
+                                </div>
+                            </div>
+                            <div class="carousel-item">
+                                <div class="container py-1">
+                                    <div class="row row-cols-12 g-3" id="power">
+                                        
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="carousel-item">
+                                <div class="container py-1">
+                                    <div class="row row-cols-12 g-3" id="room">
+                                        
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        {% block body %}{% endblock %}
+
+        <!-- Modal stuff -->
+        <div class="modal fade " id="groupsettings" tabindex="-1" aria-labelledby="groupsettingslabel" aria-hidden="true">
+            <div class="modal-dialog modal-lg modal-dialog-centered">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="groupsettingslabel">Einstellungen <span id="gsetting-gname"></span></h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                        <form>
+                            <div class="mb-3">
+                                <strong>Bridge:</strong>
+                                <span id="gsetting-bridgename"></span>
+                            </div>
+                            <div class="mb-3">
+                                <strong>Geräte:</strong>
+                                <table id="gsetting-devicelist"  class="table">
+
+                                </table>
+                                <table id="gsetting-sensors" class="table">
+
+                                </table>
+                                <div class="text-center">
+                                    <p>Szenen</p>
+                                    <div class="btn-group" id="gsetting-scenes">
+
+                                    </div>
+                                </div>                                
+                                <div class="text-center">
+                                    <p>Sensor gesteuert</p>
+                                    <div class="btn" id="gsetting-automatics">
+
+                                    </div>
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn c58" data-bs-dismiss="modal">Schließen</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <script src="/js/bootstrap.bundle.min.js" ></script>
+        <script src="/js/jquery.min.js" ></script>        
+        <script src="/js/peer.min.js" ></script>
+        <script src="/lcars/js/lcars.js" ></script>
+        <script>(function (d, s) {
+                if (!window.rel) {
+                    s = d.createElement("script");
+                    s.type = "text/javascript";
+                    s.async = true;
+                    s.id = "radio-de-embedded";
+                    s.src = "/js/Main_b.js";
+                    d.getElementsByTagName("head")[0].appendChild(s);
+                    window.rel = true;
+                }
+            }(document));</script>
+    </body>
+</html>
